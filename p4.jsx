@@ -23,12 +23,31 @@ class App extends React.Component {
     render() {
       const { displayExample } = this.state;
       return (
-        <div>
+        /*<div>
           <button onClick={this.toggleDisplay}>
             Switch to {displayExample ? 'States' : 'Example'}
           </button>
           {displayExample ? <Example /> : <States />}
+        </div>*/
+        <div style={{ textAlign: 'center', marginTop: '20px' }}>
+  <button
+    style={{
+      backgroundColor: '#3498db',
+      color: 'white',
+      border: 'none',
+      padding: '10px 20px',
+      borderRadius: '5px',
+      cursor: 'pointer',
+      fontSize: '16px', // Adjust the font size
+      boxShadow: '2px 2px 4px rgba(0, 0, 0, 0.2)', // Add a subtle shadow
+    }}
+    onClick={this.toggleDisplay}
+  >
+    Switch to {displayExample ? 'States' : 'Example'}
+  </button>
+  {displayExample ? <Example /> : <States />}
         </div>
+
       );
     }
   }

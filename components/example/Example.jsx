@@ -114,19 +114,21 @@ class Example extends React.Component {
   render() {
     
     return (
-      <div className="container Example">
+      <div className="container Example" >
         <h1>Project 4 React.js Example</h1>
 
         <div className="motto-update">
           {/* Your problem #1 motto displaying and updating widget goes here */}
-          <p style={{ color: 'blue', fontSize: '16px', fontWeight: 'bold', margin: '10px 0' }}>{this.state.name}</p>
+          <p style={{ color: '#A23456', fontSize: '34px', fontWeight: 'bold', margin: '10px 0' }}>Team-{this.state.name}</p>
 <p style={{ color: 'green', fontSize: '18px', fontStyle: 'italic', textDecoration: 'underline' }}> {this.state.motto}</p>
 
 
-          <hr></hr>
+<hr style={{ border: '2px solid #A49665' }} />
+
           <form onSubmit={this.handleSubmit} style={{ backgroundColor: 'lightgray', padding: '10px', borderRadius: '5px' }}>
   <label>
     Change Motto:
+    &nbsp;&nbsp;&nbsp;
     <input
       type="text"
       placeholder={this.state.motto}
@@ -144,12 +146,14 @@ class Example extends React.Component {
     type="submit"
     value="Change"
     style={{ 
-      backgroundColor: 'blue',
+      backgroundColor: '#A49665',
       color: 'white',
       padding: '5px 10px',
       borderRadius: '3px',
-      cursor: 'pointer'
+      cursor: 'pointer',
+      border: '2px solid #005035', // Add a gold border
     }}
+    
   />
           </form>
 
