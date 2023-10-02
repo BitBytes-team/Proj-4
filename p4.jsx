@@ -43,7 +43,7 @@ class App extends React.Component {
     }}
     onClick={this.toggleDisplay}
   >
-    Switch to {displayExample ? 'States' : 'Example'}
+    Click Button for Switching to {displayExample ? 'States' : 'Example'}
   </button>
   {displayExample ? <Example /> : <States />}
         </div>
