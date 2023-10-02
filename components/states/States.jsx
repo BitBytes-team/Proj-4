@@ -24,7 +24,7 @@ render() {
 const filteredStates = this.function();
 
 return (
-  <div>
+  <div >
     <h1 style={{
   textAlign: 'center',      // Center the text horizontally
   backgroundColor: 'lightblue', // Add background color
