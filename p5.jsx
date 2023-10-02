@@ -12,7 +12,7 @@ class App extends React.Component {
           <div>
   <nav style={{ display: 'flex', justifyContent: 'space-around', alignItems: 'center', padding: '10px',backgroundColor:'#9ECD17'}}>
     <div style={{ marginRight: '20px', padding: '10px' }}>
-      <Link to="/example" style={{ textDecoration: 'none', color: 'darkblue', fontSize: '27px', fontWeight: 'bold' }}>Example</Link>
+      <Link to="/example" style={{ textDecoration: 'none', color: 'darkblue',fontSize: '27px', fontWeight: 'bold' }}>Example</Link>
     </div>
 
     <div style={{  padding: '10px' }}>
